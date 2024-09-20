@@ -31,6 +31,8 @@ public class App {
         int resultado2 = dataStructuresPrep.multiplyAlgorithm(5,3);
         int resultado3 = dataStructuresPrep.divideWAlgorithm(10, 2);
         boolean resultado4 = dataStructuresPrep.isPerfectNumber(6);
+        int resultado5 = dataStructuresPrep.getFactorial(6);
+        
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -49,5 +51,6 @@ public class App {
         System.out.println("El resultado de multiplyAlgorithm  es: " + resultado2);
         System.out.println("El resultado de divideWAlgorithm  es: " + resultado3);
         System.out.println("El resultado de isPerfectNumber  es: " + resultado4);
+        System.out.println("El resultado de igetFactorial  es: " + resultado5);
     }
 }
