@@ -25,8 +25,15 @@ public class DataStructuresPrep {
      * @return El resultado de restar b a a.
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
-    public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    public int subtractAlgorithm(int a, int b) {//lo que esta dentro de los parentecis son los parametros 
+        int count = 0;
+        while (a > (b + count)) {// (while) cuando la condicion se cumpla 
+            count ++;
+        }
+        return count;
+       
+            
+        
     }
 
     /**
@@ -38,7 +45,12 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultado = 0;
+        for(int i = 0; i < b;i++){
+            resultado = resultado + a;
+
+        }
+        return resultado;
 
     }
 
@@ -51,7 +63,26 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        /*int dividir = 0;
+        for(int i = 0; i < divisor; i--){
+            dividir = dividir + dividend;
+
+        }
+        return dividir;*/
+
+        int count = 0;
+        int residuo = dividend;
+        
+        while (residuo >= divisor ) {// (while) cuando la condicion se cumpla 
+
+            count ++;
+            residuo = residuo - divisor;
+        }
+        return count;
+       
+
+        
+
 
     }
 
@@ -64,7 +95,34 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+       /*int i;
+       int j;
+       int suma;
+       for( i = 0; i< number;i++){
+        suma = 0;
+        for(j = 0; j< i ; j++){
+            if (i % j == 0) {
+                suma = suma +j;
+
+                
+            }
+            if (i == suma) {
+                System.out.println(i);
+                
+            }
+
+        }
+
+       }*/
+      int suma = 0;
+      for(int i = 0; i < number; i++){
+        if (number % 1 == 0) {
+            suma = suma+1;
+            
+        }
+
+      }
+      return suma == number;
     }
 
     /**
